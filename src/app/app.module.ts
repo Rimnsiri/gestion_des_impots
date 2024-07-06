@@ -7,18 +7,21 @@ import { AuthComponent } from './auth/auth.component';
 import { AuthModule } from './auth/auth.module';
 import { AdminComponent } from './admin/admin.component';
 import { SidebarComponent } from './admin/sidebar/sidebar.component';
-
+import { DashbordComponent } from './admin/dashbord/dashbord.component';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
     SidebarComponent,
-    AdminComponent  
+    AdminComponent,
+    DashbordComponent  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModule 
+    AuthModule ,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
